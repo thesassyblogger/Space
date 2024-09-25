@@ -1,0 +1,94 @@
+.missioncon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2vw;
+}
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#timeline-container {
+    position: absolute;
+    width: 80%;
+    /* background-color: #661313; */
+    /* margin: 0 auto; */
+    /* padding-top: 5vw; */
+}
+
+.milestone {
+    width: 60vw;
+    height: 40vw;
+    position: relative;
+    margin: 5vw 0;
+    padding: 2vw;
+    background-color: rgba(63, 10, 143, 0.8);
+    border-radius: 1vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.milestone h2 {
+    margin-top: 0;
+}
+
+.milestone p {
+    margin-bottom: 0;
+}
+
+
+/* Milestone in view */
+
+.milestone.in-view {
+    transform: scale(1.05);
+}
+
+
+/* Background images for different milestones */
+
+#mission[data-bg="earth"] {
+    background-color: #003366;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vw;
+    /* Dark blue for Earth */
+}
+
+#mission[data-bg="moon"] {
+    background-color: #4D4D4D;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 50vw; */
+    /* Gray for the Moon */
+}
+
+#mission[data-bg="mars"] {
+    background-color: #B22222;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 50vw; */
+    /* Reddish color for Mars */
+}
+
+#mission[data-bg="deep-space"] {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 50vw; */
+    /* Black for deep space */
+}
+
+.missioncon {
+    width: 50vw;
+    height: 100%;
+    padding: 10vw;
+    /* background-color: #003366; */
+}

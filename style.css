@@ -1,0 +1,63 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.milestone {
+    position: relative;
+    margin: 100px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.milestone h2 {
+    margin-top: 0;
+}
+
+.milestone p {
+    margin-bottom: 0;
+}
+
+
+/* Milestone in view */
+
+.milestone.in-view {
+    transform: scale(1.05);
+}
+
+
+/* Background images for different milestones */
+
+body[data-bg="earth"] {
+    background-color: #003366;
+    /* Dark blue for Earth */
+}
+
+body[data-bg="moon"] {
+    background-color: #4D4D4D;
+    /* Gray for the Moon */
+}
+
+body[data-bg="mars"] {
+    background-color: #B22222;
+    /* Reddish color for Mars */
+}
+
+body[data-bg="deep-space"] {
+    background-color: #000000;
+    /* Black for deep space */
+}
